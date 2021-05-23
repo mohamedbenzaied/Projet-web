@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Proxima-nova;
+    src: url(./proxima-nova-light-webfont.woff);
+}
+.container{
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    width: 1000px;
+    height: 450px;
+    margin-top: 5%;
+    
+}
+html,body {
+    background:  #65AFFF ;
+    width: 100%;
+    height: 150%;
+    margin: 0;
+    padding: 0;
+}
+.form{
+    width: 100%;
+}
+h1{
+    color:  #1B2845  ;
+    align-items: center;
+       text-align: center;
+       text-shadow: 
+      
+       -3px 4px 5px white;
+       letter-spacing: .15em;
+       font-size: 50px;
+       font-family: proxima-nova;
+}
+h2{
+    color: #1B2845  ;
+    text-shadow: 
+   
+    -1px 2px 5px white;
+    font-family: proxima-nova;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: .10em;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 20px 20px 20px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #6290C3 ;
+    color: white;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    font-family: Proxima-nova;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    font-family: Proxima-nova;
+    font-weight: bold;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
